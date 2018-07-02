@@ -11,10 +11,11 @@
     <h1>Hello, world!</h1>
     <p>this page includes an alert written in JavaScript.</p>
     <script>
-	alert("hello world");
-	let firstName = "Roger";
-	let lastName = "Lewis";
-	console.log(firstName + " " + lastName);
+	const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", 
+              "Wednesday", "Thursday", "Friday", "Saturday"];
+	let now = new Date();
+	let dayname = daysOfTheWeek[now.getDay()];
+	alert(`Hello, world! Happy ${dayname}.`);
     </script>
   </body>
 </html>
